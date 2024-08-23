@@ -364,7 +364,7 @@ const deleteJobs = async (namaObat, email) => {
     });
 
     // Delete each job from the external API
-    const authToken = 'OWNOzoFyX2GvLKaGBkAToOiAgM3Q+Erz8mAxnHmTA2s=';
+    const authToken = 'cvQ1UehtttwzRbOVxWVb1YLYjlqScpmBLWO09wSqGBY=';
     for (const { jobId } of jobsToDelete) {
       const url = `https://api.cron-job.org/jobs/${jobId}`;
       const response = await fetch(url, {
@@ -446,7 +446,7 @@ const deleteJobsDetail = async (namaObat, email, jam, menit) => {
         });
 
         // Delete each job from the external API
-        const authToken = 'OWNOzoFyX2GvLKaGBkAToOiAgM3Q+Erz8mAxnHmTA2s=';
+        const authToken = 'cvQ1UehtttwzRbOVxWVb1YLYjlqScpmBLWO09wSqGBY=';
         for (const { jobId } of jobsToDelete) {
           const url = `https://api.cron-job.org/jobs/${jobId}`;
           const response = await fetch(url, {
